@@ -9,5 +9,6 @@
     <StackPanel>
         <TextBlock Text="HALLO WPF!" />
         <Button Content="Klik mij!"></Button>
+        <Image Source="pack://siteoforigin:,,,/Resources/Hedwig.png" />
     </StackPanel>
 </Window>

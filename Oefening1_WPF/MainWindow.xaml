@@ -1,0 +1,36 @@
+﻿<Window x:Class="Oefening1_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oefening1_WPF"
+        mc:Ignorable="d"
+        Title="Oefening 1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="TrumpStemButton" Grid.Column="0" Grid.Row="0" Height="100" Width="100" Click="TrumpStemButton_Click">
+            <Button.Content>
+                <Image Source="pack://siteoforigin:,,,/Resources/Trump.jpg"/>
+            </Button.Content>
+        </Button>
+        <RepeatButton x:Name="MijnRepeatButton" Height="30" Width="100" Content="Repeat button" Grid.Column="1" Grid.Row="0"
+                      Click="MijnRepeatButton_Click" />
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Buttons rij" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
+        <CheckBox x:Name="MijnCheckBox" Grid.Column="0" Grid.Row="1" Content="Mijn Checkbox" HorizontalAlignment="Center" VerticalAlignment="Center" Click="MijnCheckBox_Click"/>
+        <GroupBox Grid.Row="1" Grid.Column="2" Header="Wat is uw geslacht?">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <RadioButton x:Name="RadioButtonMan" Content="Man" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="RadioButtonVrouw" Content="Vrouw" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="RadioButtonTransgender" Content="X" Checked="RadioButton_Checked"/>
+            </StackPanel> 
+        </GroupBox>
+    </Grid>
+</Window>
