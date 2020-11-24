@@ -6,8 +6,16 @@
         xmlns:local="clr-namespace:Demo_ItemsControls"
         mc:Ignorable="d"
         Title="BindingListBoxWindow" Height="150" Width="300">
-    <StackPanel Margin="10">
-        <ListBox x:Name="ListBoxTaken" HorizontalContentAlignment="Stretch">
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Left">
+            <TextBlock FontWeight="Bold" Margin="0,0,0,10">ListBox selectie</TextBlock>
+            <Button x:Name="ButtonToonGeselecteerdeTaak" Click="ButtonToonGeselecteerdeTaak_Click">Toon geselecteerde</Button>
+            <Button x:Name="ButtonSelecteerEerste" Click="ButtonSelecteerEerste_Click">Selecteer Eerste</Button>
+            <Button x:Name="ButtonSelecteerVolgende" Click="ButtonSelecteerVolgende_Click">Selecteer Volgende</Button>
+            <Button x:Name="ButtonSelecteerLaatste" Click="ButtonSelecteerLaatste_Click">Selecteer Laatste</Button>
+        </StackPanel>
+    <StackPanel DockPanel.Dock="Right" Margin="20">
+        <ListBox x:Name="ListBoxTaken" HorizontalContentAlignment="Stretch" SelectionMode="Multiple">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="2">
@@ -23,4 +31,5 @@
             </ListBox.ItemTemplate>
         </ListBox>
     </StackPanel>
+    </DockPanel>
 </Window>
