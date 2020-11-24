@@ -12,7 +12,7 @@
             <ComboBoxItem IsSelected="True">Item 2</ComboBoxItem>
             <ComboBoxItem>Item 3</ComboBoxItem>
         </ComboBox>-->
-        <ComboBox x:Name="ComboBoxColors" >
+        <ComboBox x:Name="ComboBoxColors" SelectionChanged="ComboBoxColors_SelectionChanged" >
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -22,5 +22,11 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
+        <StackPanel Orientation="Horizontal" Margin="20">
+            <Button Margin="50" x:Name="ButtonVorige" Click="ButtonVorige_Click" Width="100" Content="Vorige"/>
+            <Button Margin="50" x:Name="ButtonVolgende" Click="ButtonVolgende_Click" Width="100"  Content="Volgende"/>
+            <Button Margin="50" x:Name="ButtonBlauw" Content="Secteer Blauw" Width="100"  Click="ButtonBlauw_Click"></Button>
+        </StackPanel>
+       
     </StackPanel>
 </Window>
