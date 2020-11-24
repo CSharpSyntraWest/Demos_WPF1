@@ -34,3 +34,14 @@
         </GroupBox>
     </Grid>
 </Window>
+<!--Oefening:
+Maak een nieuw WPF project met naam Oefening1_WPF
+In MainWindow.xaml : maak een Grid met 2 rijen en 3 kolommen
+Zet in de grid linksboven een gewone Button en zet een event handler op het Click event. Deze geeft een messageBox "Op trump gestemd"
+Zet een image op de button (gebruik een image Resource van het project)
+zet in de bovenaan 2de kolom een RepeatButton en zet er ook een Click event handler op. Deze schrijft naar het output venster "Repeating executing event handler"
+zet rechts bovenaan een TextBlock met Tekst "Buttons rij"
+zet links op 2de rij een checkbox en zet een event handler op de Click event. Schrijf de waarde van de property IsChecked naar het output venster
+zet rechts op 2de rij een Groupbox met stackpanel erin met daarin 3 radio buttons. De Header van de groupbox = "Wat is uw geslacht"
+De radiobuttons tekst staat op "Man", "Vrouw", "Transgender". Zet event handlers op de Checked van elke radio button.
+Geef bij elk een tekst met het geslacht-->
