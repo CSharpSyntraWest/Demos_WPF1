@@ -28,7 +28,8 @@ namespace Demo_Buttons
 
         private void GewoneButton_Click(object sender, RoutedEventArgs e) //Event Handler = methode die wordt uitgevoerd bij Click event op Button GewoneButton
         {
-           MessageBox.Show("Je hebt geklikt op de gewone button");
+            // MessageBox.Show("Je hebt geklikt op de gewone button");
+            Debug.WriteLine("Je hebt geklikt op de gewone button");
         }
 
         private void Checkbox_Click(object sender, RoutedEventArgs e)
@@ -60,6 +61,11 @@ namespace Demo_Buttons
         {
             CheckBox deCheckbox = (CheckBox)sender;
             Debug.WriteLine("{0} is in ongedefinieerde status. Nu IsChecked={1}", deCheckbox.Name, deCheckbox.IsChecked);
+        }
+
+        private void Keuze1_Checked(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Keuze 1 is checked");
         }
     }
 }

@@ -16,9 +16,39 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Grid.Row="0" Grid.Column="0" x:Name="GewoneButton" Content="Klik mij" Click="GewoneButton_Click" VerticalAlignment="Center" Height="30" Width="158" FontSize="14" HorizontalAlignment="Center" />
+        <Button Grid.Row="0" Grid.Column="0" x:Name="GewoneButton"  Click="GewoneButton_Click" VerticalAlignment="Center" Height="30" Width="208" 
+                FontSize="14" HorizontalAlignment="Center" >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Fill="Green" Width="10" Height="10"/>
+                    <TextBlock Text="Klik mij, Ik ben een Button" Margin="5,0,0,0"/>
+
+                </StackPanel>
+            </Button.Content>
+
+        </Button>
+
+        <Button Grid.Row="1" Grid.Column="0" >
+            <Button.Content>
+                <StackPanel HorizontalAlignment="Left" >
+                    <Ellipse Fill="Red" Width="54" Height="56" />
+                    <TextBlock Text="Dit is een tekstje op de button"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Grid.Row="1" Grid.Column="1">
+            <Button.Content>
+                <Image Source="pack://siteoforigin:,,,/Resources/Trump.jpg"  />
+            </Button.Content>
+        </Button>
         <RepeatButton Grid.Row="0" Grid.Column="1" x:Name="RepeatButton" Click="RepeatButton_Click" Height="30" Width="158"  Content="Repeat Button"/>
         <CheckBox Grid.Row="2" Grid.Column="0" x:Name="Checkbox" Content="Checkbox" Click="Checkbox_Click" VerticalAlignment="Center" IsThreeState="True" HorizontalAlignment="Center"
                   Checked="Checkbox_Checked" Unchecked="Checkbox_Unchecked" Indeterminate="Checkbox_Indeterminate"></CheckBox>
+        <GroupBox Header="Enkele Radio buttons" Grid.Row="2" Grid.Column="1">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+                <RadioButton x:Name="Keuze1" Content="Je kan mij kiezen" Height="30" Checked="Keuze1_Checked" />
+                <RadioButton x:Name="Keuze2" Content="Of kies mij" Height="30"/>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
